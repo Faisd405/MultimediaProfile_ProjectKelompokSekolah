@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multimedia Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styleacc.css">
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
+</head>
+<body>
+	<nav>
+    <ul>
+      <header><img src="logomm2.png" class="logo"></header>  <!-- tempat logo -->
+      <li><a href="Multimedia.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="picture.html">Picture</a></li>
+      <li><a href="TeachersTeam.html">Team</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	</ul>
+      </nav>
+
+	
+  <section class="sec1s"></section>
+
+
+  <h1 align="center" style="font-size: 45px">Services</h1>
+
+  <section class="sec2">
+    <div class="card">
+      <img src="logophotographer.png" alt="Avatar" style="width:100%">
+    <div class="containers">
+      <h3 align="center"><b>Photography</b></h3>
+  </div>
+  </div>
+  
+  <div class="card">
+    <img src="logovideographer.jpg" alt="Avatar" style="width:100%">
+  <div class="containers">
+    <h3 align="center"><b>Videography</b></h3>
+  </div>   
+  </div>
+
+
+  <div class="card" >
+    <img src="logophotedit.png" alt="Avatar" style="width:100%">
+  <div class="containers">
+    <h3 align="center"><b>Photo Bitmap Editing</b></h3>
+  </div>   
+  </div>
+
+  <div class="card">
+    <img src="logovector.png" alt="Avatar" style="width:100%">
+  <div class="containers">
+    <h3 align="center"><b>Photo Vector Editing</b></h3>
+  </div>   
+  </div>
+
+  <br>
+
+   <div class="card">
+    <img src="logoanimator.gif" alt="Avatar" style="width:100%">
+  <div class="containers">
+    <h3 align="center"><b>2D Animation</b></h3>
+  </div>   
+  </div>
+
+  <div class="card">
+    <img src="logo3danimator.gif" alt="Avatar" style="width:100%">
+  <div class="containers">
+    <h3 align="center"><b>3D Modelling</b></h3>
+  </div>   
+  </div>
+  
+  <div class="card">
+    <img src="logovidedit.png" alt="Avatar" style="width:100%">
+  <div class="containers">
+    <h3 align="center"><b>Video Editing</b></h3>
+  </div>   
+  </div>
+
+  <div class="card">
+    <img src="logoeventplanner.png" alt="Avatar" style="width:100%">
+  <div class="containers">
+    <h3 align="center"><b>Event Planner</b></h3>
+  </div>   
+  </div>
+
+  </section>
+
+  <br>
+
+  <h1 align="center" style="font-size: 45px">Software</h1>
+
+  <div class="wrapper">
+      <button class="accordion">
+        <h2 style="font-weight: lighter; display: inline">Photo Bitmap Editing </h2> 
+        </button>
+      <div class="panel">
+          <p></p>
+      <ul>
+          <li style="font-size: 20px">Adobe Photoshop : <img src="png/photoshop.png" alt="Avatar" style="width:35px"></li>
+      </ul>
+      </div>
+      
+      <button class="accordion"><h2 style="font-weight: lighter">Photo Vector Editing</h2></button>
+      <div class="panel">
+          <p></p>
+          <ul>
+              <li style="font-size: 20px">Adobe Illustrator  : <img src="png/illustrator.png" alt="Avatar" style="width:35px;"></li>
+              <li style="font-size: 20px">Corel Draw : <img src="png/corel.png" alt="Avatar" style="width:35px"></li>
+          </ul>
+        </div>
+      
+      <button class="accordion"><h2 style="font-weight: lighter">Video Editing</h2></button>
+      <div class="panel">
+          <p></p>
+          <ul>
+              <li style="font-size: 20px">Adobe Premiere Pro : <img src="png/premiere.png" alt="Avatar" style="width:35px"></li>
+              <li style="font-size: 20px">Adobe After Effect : <img src="png/ae.png" alt="Avatar" style="width:35px"></li>
+          </ul></div>
+      
+
+      <button class="accordion"><h2 style="font-weight: lighter">2D Animation</h2></button>
+      <div class="panel">
+          <p></p>
+          <ul>
+              <li style="font-size: 20px">Adobe Flash CS6 : <img src="png/flash.png" alt="Avatar" style="width:35px"></li>
+          </ul></div>
+
+          <button class="accordion"><h2 style="font-weight: lighter">3D Modelling</h2></button>
+          <div class="panel">
+              <p></p>
+              <ul>
+                  <li style="font-size: 20px">Blender : <img src="png/blender.png" alt="Avatar" style="width:35px"></li>
+              </ul></div>
+    
+
+
+      </div>
+
+      <script>
+      var acc = document.getElementsByClassName("accordion");
+      
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+      
+  
+</body>
+</html>
